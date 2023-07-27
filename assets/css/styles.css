@@ -41,8 +41,15 @@ nav a {
 }
 
 .page-wrapper {
-    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
+
+.footer {
+    flex-shrink: 0;
+}
+
 
 .container-fluid {
     display: flex;
@@ -303,6 +310,7 @@ header {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    height: 100%;
 }
 
 .about-section {
@@ -311,6 +319,7 @@ header {
     border-radius: 10px;
     padding: 20px;
     width: 60%;
+    height: 100%;
     margin: 0 auto;
     text-align: justify;
 }
@@ -417,13 +426,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
-
-/* .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-} */
 
 .text-center {
     text-align: center;
