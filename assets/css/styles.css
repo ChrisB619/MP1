@@ -8,6 +8,10 @@ styles.css
 body, html {
     height: 100%;
     margin:0%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* end body required properties */
 }
 
 /* Nav Bar custom css */
@@ -47,7 +51,10 @@ nav a {
 }
 
 .footer {
-    flex-shrink: 0;
+    position: flex;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 
@@ -306,22 +313,38 @@ header {
     text-align: center;
 }
 
-.container {
+.containerole {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    height: 100%;
+    padding: 10px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    /* border-radius: 10px;
+    border: 3px dashed #1c87c9; */
+    align-items:center;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
-.about-section {
+.about-section1 {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
-    width: 60%;
-    height: 100%;
-    margin: 0 auto;
-    text-align: justify;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.about-section2 {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;                                                                                                                                                                                                                      
 }
 
 .about-title {
@@ -351,7 +374,12 @@ header {
     1px 1px 0 #000,
     1px -1px 0 #000,
     -1px -1px 0 #000;
+    width: 60%;
 }
+
+ul {
+    list-style-type: none;
+  }
 
 .iframe section     {
     position: relative;
